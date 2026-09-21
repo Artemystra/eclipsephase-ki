@@ -1,0 +1,27 @@
+{
+  "name": "eclipsephase-ki",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Ki discipline for the Eclipse Phase system for Foundry VTT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-jest": "^27.0.2",
+    "jest": "^27.5.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  }
+}

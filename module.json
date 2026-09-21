@@ -1,0 +1,73 @@
+{
+  "id": "eclipsephase-ki",
+  "title": "Eclipse Phase — Ki",
+  "description": "The Ki discipline for the Eclipse Phase system: Ki sleights, sub-strains and their influence table.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Artemystra"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "eclipsephase",
+        "type": "system",
+        "compatibility": {
+          "minimum": "2.5"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "module/index.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    },
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "cn",
+      "name": "中文",
+      "path": "lang/cn.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "ki-sleights",
+      "label": "Ki Sleights",
+      "path": "packs/ki-sleights",
+      "type": "Item",
+      "system": "eclipsephase",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "banner": "systems/eclipsephase/resources/img/Compendium Banners/bannerPsiSleights.webp"
+    }
+  ],
+  "url": "https://github.com/Artemystra/eclipsephase-ki",
+  "manifest": "https://raw.githubusercontent.com/Artemystra/eclipsephase-ki/main/module.json",
+  "download": "https://github.com/Artemystra/eclipsephase-ki/archive/refs/heads/main.zip"
+}
