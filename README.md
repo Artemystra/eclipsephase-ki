@@ -39,13 +39,3 @@ restores everything.
 
 Worlds upgrading from before 2.5 have their Ki choices moved into these flags by the system's own
 2.5 migration, whether or not this module is installed.
-
-## Development
-
-```
-npm install
-npm test
-```
-
-The compendium is edited as source JSON under `src/packs/ki-sleights/` and packed with the Foundry
-CLI; never edit `packs/` by hand.
