@@ -32,6 +32,14 @@ describe("the module manifest", () => {
     expect(fs.existsSync(path.join(ROOT, pack.path))).toBe(true);
   });
 
+  test("the manifest is the rolling latest-release alias, so an installed copy always finds the newest one", () => {
+    expect(manifest.manifest).toEqual("https://github.com/Artemystra/eclipsephase-ki/releases/latest/download/module.json");
+  });
+
+  test("the download is pinned to the tag matching the declared version", () => {
+    expect(manifest.download).toEqual(`https://github.com/Artemystra/eclipsephase-ki/releases/download/v${manifest.version}/eclipsephase-ki.zip`);
+  });
+
   test("it offers all five languages", () => {
     expect(manifest.languages.map(entry => entry.lang).sort()).toEqual(["cn", "de", "en", "es", "pt-BR"]);
   });
