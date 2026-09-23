@@ -50,7 +50,7 @@ https://raw.githubusercontent.com/Artemystra/eclipsephase-ki/main/module.json
 ## Turning the module off
 
 A character's Ki sub-strain choices live in this module's flags, so they survive with the module
-disabled — nothing is deleted. While it is off, the system does not know the Ki family at all: Ki
-sleights stay visible on the sheet but their rolls are refused with a message saying so, and a
-warning triangle marks them. They are never silently resolved as Psi. Re-enabling the module
-restores everything.
+disabled — nothing is deleted. While it is off, the system does not know the Ki family at all, so
+the strain tab shows a Module Missing panel asking for the module to be activated instead of the
+character's Ki abilities. Nothing is ever silently resolved as Psi. Re-enabling the module restores
+everything.
