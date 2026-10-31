@@ -161,7 +161,16 @@
             "text": "Avatar"
           }
         }
-      }
+      },
+      "landingRule": {
+        "powerDrain": "Drenar Vigor"
+      },
+      "powerDrained": "{sleight}: {target} pierde {lost} de Vigor.",
+      "option": {
+        "kiAttacks": "Resistir ataques Ki"
+      },
+      "spendRez": "x 1 Sleight de Ki",
+      "rollInfection": "Tirar infección de Ki"
     },
     "item": {
       "aspect": {
@@ -177,7 +186,8 @@
         "ki": {
           "noCyberbrain": "El Ki solo funciona desde un Cerebro Cibernético. Al interferir, todos los cuerpos usados en la cadena de interferencia deben tener un Cerebro Cibernético.",
           "substrateBlockedTooltip": "Sin Cerebro Cibernético",
-          "substrateMismatch": "Cerebro Cibernético en un cuerpo biológico"
+          "substrateMismatch": "Cerebro Cibernético en un cuerpo biológico",
+          "biologicalBody": "Cuerpo biológico alrededor del cibercerebro"
         }
       }
     },

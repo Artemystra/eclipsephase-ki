@@ -5,11 +5,57 @@
     "core": {}
   },
   "img": "systems/eclipsephase/resources/icons/mechanical-arm.png",
-  "effects": [],
+  "effects": [
+    {
+      "_id": "lP8q27MIY77kZHUr",
+      "name": "Brownout",
+      "img": "systems/eclipsephase/resources/icons/mechanical-arm.png",
+      "type": "base",
+      "disabled": false,
+      "transfer": true,
+      "origin": null,
+      "tint": "#ffffff",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "statuses": [],
+      "flags": {},
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "system": {
+        "changes": [
+          {
+            "key": "system.mods.globalMod",
+            "value": "-10",
+            "priority": null,
+            "type": "add"
+          }
+        ]
+      },
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!hpRiyJHojjBtLJuN.lP8q27MIY77kZHUr"
+    }
+  ],
   "system": {
     "tags": [],
     "additionalSystems": {},
-    "description": "You starve the target's systems of power. The target is impaired, suffering -10 to all actions, plus an extra -10 per superior success, for WIL ÷ 5 action turns.",
+    "description": "You starve the target's systems of power. The target is impaired, suffering -10 to all actions, plus an extra -10 per superior success, for SOM ÷ 5 action turns.",
     "active": true,
     "displayCategory": "",
     "updated": "2.3",
@@ -17,8 +63,9 @@
     "psiType": "gamma",
     "strainFamily": "ki",
     "actionType": "complex",
-    "duration": "Actions Turns",
-    "pushed": false
+    "duration": "action",
+    "pushed": false,
+    "repeatPerSuperior": true
   },
   "folder": "BdL8YvDVmJHwWscq",
   "_stats": {

@@ -9,7 +9,7 @@
   "system": {
     "tags": [],
     "additionalSystems": {},
-    "description": "Nearby ware and devices begin to mimic whatever you are currently doing: lenses refocus with your eyes, manipulators twitch with your hands, lights flicker in your rhythm. For WIL ÷ 5 minutes, opponents within Close range suffer -10 on any test the disturbance could plausibly interfere with, -10 more per superior success. Cyberbrains and life-support systems are never affected.",
+    "description": "Nearby ware and devices begin to mimic whatever you are currently doing: lenses refocus with your eyes, manipulators twitch with your hands, lights flicker in your rhythm. For SOM ÷ 5 minutes, opponents within Close range suffer -10 on any test the disturbance could plausibly interfere with, -10 more per superior success. Cyberbrains and life-support systems are never affected.",
     "active": true,
     "displayCategory": "",
     "updated": "2.3",

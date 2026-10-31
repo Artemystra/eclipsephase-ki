@@ -9,7 +9,7 @@
   "system": {
     "tags": [],
     "additionalSystems": {},
-    "description": "You accelerate wear in the target's structure. For WIL ÷ 5 minutes, the target's Frame armor becomes brittle and flakes away: -4/-4 to its Frame armor, -2/-2 more per superior success. Targets without Frame armor are unaffected.",
+    "description": "You accelerate wear in the target's structure. For SOM ÷ 5 minutes, the target's Frame armor becomes brittle and flakes away: -4/-4 to its Frame armor, -2/-2 more per superior success. Targets without Frame armor are unaffected.",
     "active": true,
     "displayCategory": "",
     "updated": "2.3",

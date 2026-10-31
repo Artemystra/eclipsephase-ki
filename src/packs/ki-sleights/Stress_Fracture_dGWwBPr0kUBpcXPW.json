@@ -9,7 +9,7 @@
   "system": {
     "tags": [],
     "additionalSystems": {},
-    "description": "You seed hairline fractures throughout the target's structure. The next time the target takes physical damage within the next WIL ÷ 5 minutes, that damage is increased by 1d6, +1d6 per superior success. The fractures fade unused once the duration ends.",
+    "description": "You seed hairline fractures throughout the target's structure. The next time the target takes physical damage within the next SOM ÷ 5 minutes, that damage is increased by 1d6, +1d6 per superior success. The fractures fade unused once the duration ends.",
     "active": true,
     "displayCategory": "",
     "updated": "2.3",

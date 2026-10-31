@@ -9,7 +9,7 @@
   "system": {
     "tags": [],
     "additionalSystems": {},
-    "description": "Mobile and movable devices within Close range crowd in around the target and block the way wherever it turns. For WIL ÷ 5 action turns, the target treats all ground as difficult terrain and suffers -20 to Fray Tests. The devices do not deliberately attack and are never damaged by this sleight.",
+    "description": "Mobile and movable devices within Close range crowd in around the target and block the way wherever it turns. For SOM ÷ 5 action turns, the target treats all ground as difficult terrain and suffers -20 to Fray Tests. The devices do not deliberately attack and are never damaged by this sleight.",
     "active": true,
     "displayCategory": "",
     "updated": "2.3",
@@ -17,7 +17,7 @@
     "psiType": "gamma",
     "strainFamily": "ki",
     "actionType": "complex",
-    "duration": "Actions Turns",
+    "duration": "action",
     "pushed": false
   },
   "folder": "BdL8YvDVmJHwWscq",

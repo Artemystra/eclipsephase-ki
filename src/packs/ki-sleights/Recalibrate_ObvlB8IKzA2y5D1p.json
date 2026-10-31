@@ -18,7 +18,15 @@
     "strainFamily": "ki",
     "actionType": "complex",
     "duration": "instant",
-    "pushed": false
+    "pushed": false,
+    "damage": {
+      "mode": "heal",
+      "target": "physical",
+      "d10": 0,
+      "d6": 1,
+      "bonus": 0
+    },
+    "repeatPerSuperior": true
   },
   "folder": "BdL8YvDVmJHwWscq",
   "_stats": {

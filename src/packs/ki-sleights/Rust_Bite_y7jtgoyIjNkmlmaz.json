@@ -23,7 +23,9 @@
       "target": "physical",
       "d10": 2,
       "d6": 0,
-      "bonus": 0
+      "bonus": 0,
+      "mode": "damage",
+      "armorUsed": "kinetic"
     }
   },
   "folder": "BdL8YvDVmJHwWscq",

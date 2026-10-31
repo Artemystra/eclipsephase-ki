@@ -161,7 +161,16 @@
             "text": "化身"
           }
         }
-      }
+      },
+      "landingRule": {
+        "powerDrain": "汲取活力"
+      },
+      "powerDrained": "{sleight}：{target} 失去 {lost} 点活力。",
+      "option": {
+        "kiAttacks": "抵抗气功攻击"
+      },
+      "spendRez": "x 1 气功异能",
+      "rollInfection": "投掷气功感染"
     },
     "item": {
       "aspect": {
@@ -177,7 +186,8 @@
         "ki": {
           "noCyberbrain": "气只能通过电子脑运作。进行干扰时，干扰链中使用的每一具身体都必须装有电子脑。",
           "substrateBlockedTooltip": "没有电子脑",
-          "substrateMismatch": "电子脑处于生物体内"
+          "substrateMismatch": "电子脑处于生物体内",
+          "biologicalBody": "赛博脑外的生物身体"
         }
       }
     },

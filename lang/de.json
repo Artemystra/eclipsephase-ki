@@ -161,7 +161,16 @@
             "text": "Avatar"
           }
         }
-      }
+      },
+      "landingRule": {
+        "powerDrain": "Vigor entziehen"
+      },
+      "powerDrained": "{sleight}: {target} verliert {lost} Vigor.",
+      "option": {
+        "kiAttacks": "Ki-Angriffen widerstehen"
+      },
+      "spendRez": "x 1 Ki-Sleight",
+      "rollInfection": "Ki-Infektion würfeln"
     },
     "item": {
       "aspect": {
@@ -177,7 +186,8 @@
         "ki": {
           "noCyberbrain": "Ki funktioniert nur aus einem Cyberhirn. Beim Jammen muss jeder in der Jamming-Kette genutzte Körper ein Cyberhirn haben.",
           "substrateBlockedTooltip": "Kein Cyberhirn",
-          "substrateMismatch": "Cyberhirn in einem biologischen Körper"
+          "substrateMismatch": "Cyberhirn in einem biologischen Körper",
+          "biologicalBody": "Biologischer Körper um das Cyberbrain"
         }
       }
     },

@@ -9,7 +9,7 @@
   "system": {
     "tags": [],
     "additionalSystems": {},
-    "description": "You lock up one of the target's systems (your choice): a single piece of ware or a single movement mode. For WIL ÷ 5 action turns, that system is completely blocked and cannot be used. The cyberbrain itself can never be chosen.",
+    "description": "You lock up one of the target's systems (your choice): a single piece of ware or a single movement mode. For SOM ÷ 5 action turns, that system is completely blocked and cannot be used. The cyberbrain itself can never be chosen.",
     "active": true,
     "displayCategory": "",
     "updated": "2.3",
@@ -17,7 +17,7 @@
     "psiType": "gamma",
     "strainFamily": "ki",
     "actionType": "complex",
-    "duration": "Actions Turns",
+    "duration": "action",
     "pushed": false
   },
   "folder": "BdL8YvDVmJHwWscq",

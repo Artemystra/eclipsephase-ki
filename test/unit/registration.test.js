@@ -1,5 +1,6 @@
 import kiConfig from "../../module/ki-config.js";
 
+let rules = {};
 const KI_STRAINS = ["crucible", "redline", "signal", "ruin", "colony"];
 
 /**
@@ -8,13 +9,14 @@ const KI_STRAINS = ["crucible", "redline", "signal", "ruin", "colony"];
  */
 function loadModule() {
   const registered = {};
+  rules = {};
   global.__ki.reset();
   jest.isolateModules(() => {
     require("../../module/index.js");
   });
   Hooks.callAll("init");
   Hooks.callAll("eclipsephase.ready", {
-    api: { registry: { registerStrainFamily: (id, definition) => { registered[id] = definition; } } }
+    api: { registry: { registerStrainFamily: (id, definition) => { registered[id] = definition; }, registerLandingRule: (id, definition) => { rules[id] = definition; } } }
   });
   return registered;
 }
@@ -47,6 +49,38 @@ describe("the tables the module contributes", () => {
       psi: "ep2e.item.aspect.table.family.psi",
       ki: "ep2e.item.aspect.table.family.ki"
     });
+  });
+});
+
+describe("who Ki reaches and what it drains", () => {
+  test("machines and cyberbrains are reached, biological brains and infomorphs are not", () => {
+    const { refuses } = loadModule().ki.targeting;
+    expect(refuses({}, ["synthmorph"])).toBeNull();
+    expect(refuses({}, ["bot"])).toBeNull();
+    expect(refuses({}, ["vehicle"])).toBeNull();
+    expect(refuses({}, ["biomorph", "cyberbrain"])).toBeNull();
+    expect(refuses({}, ["biomorph"])).toBe("biomorph");
+    expect(refuses({}, ["animal"])).toBe("animal");
+    expect(refuses({}, ["infomorph"])).toBe("infomorph");
+    const { modifiers, doublesRange, resist, durationAptitude } = loadModule().ki.targeting;
+    expect(modifiers({}, ["biomorph", "cyberbrain"]).map(entry => entry.value)).toEqual([-30]);
+    expect(modifiers({}, ["synthmorph", "cyberbrain"])).toEqual([]);
+    expect(doublesRange({ items: [{ type: "aspect", system: { strainFamily: "ki" } }] })).toBe(true);
+    expect(doublesRange({ items: [{ type: "traits", name: "Ki II" }] })).toBe(true);
+    expect(doublesRange({ items: [{ type: "aspect", system: { strainFamily: "psi" } }] })).toBe(false);
+    expect(resist).toEqual({ aptitude: "som", pool: "Vigor" });
+    expect(durationAptitude).toBe("som");
+  });
+
+  test("Power Drain takes Vigor per its potency, never below zero", async () => {
+    loadModule();
+    const update = jest.fn();
+    global.game = { ...(global.game ?? {}), i18n: { format: key => key } };
+    const api = { attacks: { sleightPotency: () => ({ count: 2, factor: 2 }) }, ui: { postCard: jest.fn() } };
+    Hooks.callAll("eclipsephase.ready", { api: { ...api, registry: { registerStrainFamily: () => {}, registerLandingRule: (id, definition) => { rules[id] = definition; } } } });
+    await rules.kiPowerDrain.onLand({ target: { name: "Bot", system: { pools: { vigor: { value: 3 } } }, update }, landing: { name: "Power Drain" }, result: 4 });
+    expect(update).toHaveBeenCalledWith({ "system.pools.vigor.value": 0 });
+    expect(api.ui.postCard).toHaveBeenCalledTimes(1);
   });
 });
 

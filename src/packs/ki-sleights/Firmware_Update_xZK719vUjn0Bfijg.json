@@ -9,7 +9,7 @@
   "system": {
     "tags": [],
     "additionalSystems": {},
-    "description": "You harden the target's input pathways against intrusion. For WIL ÷ 5 minutes, they receive +10 to resist basilisk hacks and Ki attacks, +10 per superior success.",
+    "description": "You harden the target's input pathways against intrusion. For SOM ÷ 5 minutes, they receive +10 to resist basilisk hacks and Ki attacks, +10 per superior success.",
     "active": true,
     "displayCategory": "",
     "updated": "2.3",
@@ -18,7 +18,26 @@
     "strainFamily": "ki",
     "actionType": "complex",
     "duration": "minutes",
-    "pushed": false
+    "pushed": false,
+    "rollOptions": [
+      {
+        "id": "basilisk",
+        "label": "ep2e.psi.option.basiliskHacks",
+        "value": 10,
+        "appliesTo": [
+          "int"
+        ]
+      },
+      {
+        "id": "kiAttacks",
+        "label": "ep2e.ki.option.kiAttacks",
+        "value": 10,
+        "appliesTo": [
+          "som"
+        ]
+      }
+    ],
+    "repeatPerSuperior": true
   },
   "folder": "BdL8YvDVmJHwWscq",
   "_stats": {

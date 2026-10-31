@@ -9,7 +9,7 @@
   "system": {
     "tags": [],
     "additionalSystems": {},
-    "description": "You override the target's movement governor. Choose one effect for WIL ÷ 5 minutes: Lock - the target may only use its lower listed movement rate; or Runaway - whenever the target moves, it must move its maximum possible distance for that action.",
+    "description": "You override the target's movement governor. Choose one effect for SOM ÷ 5 minutes: Lock - the target may only use its lower listed movement rate; or Runaway - whenever the target moves, it must move its maximum possible distance for that action.",
     "active": true,
     "displayCategory": "",
     "updated": "2.3",

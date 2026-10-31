@@ -9,7 +9,7 @@
   "system": {
     "tags": [],
     "additionalSystems": {},
-    "description": "You cut one of the target's sensor systems (your choice). For WIL ÷ 5 action turns, the target loses that type of sensory input. The sensors that may be negated include vision, hearing, touch, proprioception, direction, radar, lidar, t-ray, electrical sense, radiation sense, and any other augmented sense. Any actions that rely on the impaired sense require a test with a minimum -30 modifier.",
+    "description": "You cut one of the target's sensor systems (your choice). For SOM ÷ 5 action turns, the target loses that type of sensory input. The sensors that may be negated include vision, hearing, touch, proprioception, direction, radar, lidar, t-ray, electrical sense, radiation sense, and any other augmented sense. Any actions that rely on the impaired sense require a test with a minimum -30 modifier.",
     "active": true,
     "displayCategory": "",
     "updated": "2.3",
@@ -17,7 +17,7 @@
     "psiType": "gamma",
     "strainFamily": "ki",
     "actionType": "complex",
-    "duration": "Actions Turns",
+    "duration": "action",
     "pushed": false
   },
   "folder": "BdL8YvDVmJHwWscq",

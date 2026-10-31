@@ -161,7 +161,16 @@
             "text": "Avatar"
           }
         }
-      }
+      },
+      "landingRule": {
+        "powerDrain": "Drenar Vigor"
+      },
+      "powerDrained": "{sleight}: {target} perde {lost} de Vigor.",
+      "option": {
+        "kiAttacks": "Resistir a ataques Ki"
+      },
+      "spendRez": "x 1 Sleight de Ki",
+      "rollInfection": "Rolar infecção de Ki"
     },
     "item": {
       "aspect": {
@@ -177,7 +186,8 @@
         "ki": {
           "noCyberbrain": "Ki só funciona a partir de um Cérebro Cibernético. Ao fazer jamming, todos os corpos usados na cadeia de jamming devem ter um Cérebro Cibernético.",
           "substrateBlockedTooltip": "Sem Cérebro Cibernético",
-          "substrateMismatch": "Cérebro Cibernético em um corpo biológico"
+          "substrateMismatch": "Cérebro Cibernético em um corpo biológico",
+          "biologicalBody": "Corpo biológico ao redor do cibercérebro"
         }
       }
     },

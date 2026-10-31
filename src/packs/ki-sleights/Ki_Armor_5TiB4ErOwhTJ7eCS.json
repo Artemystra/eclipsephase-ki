@@ -5,11 +5,63 @@
     "core": {}
   },
   "img": "systems/eclipsephase/resources/icons/cpu.png",
-  "effects": [],
+  "effects": [
+    {
+      "_id": "Kn4Cs3esRQZ8mCn5",
+      "name": "Ki Armor",
+      "img": "systems/eclipsephase/resources/icons/cpu.png",
+      "type": "base",
+      "disabled": false,
+      "transfer": true,
+      "origin": null,
+      "tint": "#ffffff",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "statuses": [],
+      "flags": {},
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "system": {
+        "changes": [
+          {
+            "key": "system.mods.energyMod",
+            "value": "+2",
+            "priority": null,
+            "type": "add"
+          },
+          {
+            "key": "system.mods.kineticMod",
+            "value": "+2",
+            "priority": null,
+            "type": "add"
+          }
+        ]
+      },
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!5TiB4ErOwhTJ7eCS.Kn4Cs3esRQZ8mCn5"
+    }
+  ],
   "system": {
     "tags": [],
     "additionalSystems": {},
-    "description": "Your cyberbrain's defenses are solidified. You gain mental armor equal to your WIL ÷ 3 against Ki attacks.",
+    "description": "Your cyberbrain reinforces your frame against harm. You gain +2 energy and +2 kinetic armor. Pushed, this doubles to +4/+4 for SOM ÷ 5 minutes.",
     "active": true,
     "displayCategory": "",
     "updated": "2.3",

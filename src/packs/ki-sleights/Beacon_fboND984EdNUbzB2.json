@@ -9,7 +9,7 @@
   "system": {
     "tags": [],
     "additionalSystems": {},
-    "description": "You force the target's transmitters open. For WIL ÷ 5 minutes, the target involuntarily broadcasts its exact location and cannot fall completely silent, no matter what stealth or privacy modes it engages. Anyone attempting to locate or track the target receives a +30 modifier.",
+    "description": "You force the target's transmitters open. For SOM ÷ 5 minutes, the target involuntarily broadcasts its exact location and cannot fall completely silent, no matter what stealth or privacy modes it engages. Anyone attempting to locate or track the target receives a +30 modifier.",
     "active": true,
     "displayCategory": "",
     "updated": "2.3",

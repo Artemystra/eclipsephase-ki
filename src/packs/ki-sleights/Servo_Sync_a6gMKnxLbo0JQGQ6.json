@@ -5,11 +5,57 @@
     "core": {}
   },
   "img": "systems/eclipsephase/resources/icons/mechanical-arm.png",
-  "effects": [],
+  "effects": [
+    {
+      "_id": "XblJ2i3s7VN3o1EV",
+      "name": "Servo Sync",
+      "img": "systems/eclipsephase/resources/icons/mechanical-arm.png",
+      "type": "base",
+      "disabled": false,
+      "transfer": true,
+      "origin": null,
+      "tint": "#ffffff",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "statuses": [],
+      "flags": {},
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "system": {
+        "changes": [
+          {
+            "key": "system.pools.vigor.mod",
+            "value": "+1",
+            "priority": null,
+            "type": "add"
+          }
+        ]
+      },
+      "_stats": {
+        "coreVersion": "14.360",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!a6gMKnxLbo0JQGQ6.XblJ2i3s7VN3o1EV"
+    }
+  ],
   "system": {
     "tags": [],
     "additionalSystems": {},
-    "description": "You bring the target's actuators into perfect step. They receive +1 Vigor pool for WIL ÷ 5 minutes. A target may only benefit from one servo sync at a time.",
+    "description": "You bring the target's actuators into perfect step. They receive +1 Vigor pool for SOM ÷ 5 minutes. A target may only benefit from one servo sync at a time.",
     "active": true,
     "displayCategory": "",
     "updated": "2.3",

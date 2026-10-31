@@ -46,9 +46,9 @@ describe("the Ki sleight compendium", () => {
     expect(traits.every(entry => !entry.data.folder)).toBe(true);
   });
 
-  test("it brings the Ki folder and its two sub-folders", () => {
-    expect(folders).toHaveLength(3);
-    expect(folders.map(entry => entry.data.name).sort()).toEqual(["Chi", "Gamma", "Ki"]);
+  test("it brings the Chi and Gamma folders at its root, as the Psi pack does", () => {
+    expect(folders.map(entry => entry.data.name).sort()).toEqual(["Chi", "Gamma"]);
+    expect(folders.every(entry => !entry.data.folder)).toBe(true);
   });
 
   test("every document carries an id, so packing keeps them stable", () => {

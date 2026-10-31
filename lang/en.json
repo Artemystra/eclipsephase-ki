@@ -161,7 +161,16 @@
             "text": "Avatar"
           }
         }
-      }
+      },
+      "landingRule": {
+        "powerDrain": "Drain Vigor"
+      },
+      "powerDrained": "{sleight}: {target} loses {lost} Vigor.",
+      "option": {
+        "kiAttacks": "Resisting Ki attacks"
+      },
+      "spendRez": "x 1 Ki Sleight",
+      "rollInfection": "Roll Ki Infection"
     },
     "item": {
       "aspect": {
@@ -177,7 +186,8 @@
         "ki": {
           "noCyberbrain": "Ki only works from a Cyberbrain. If jamming, every body used in the jamming chain must have a cyberbrain.",
           "substrateBlockedTooltip": "No Cyberbrain",
-          "substrateMismatch": "Cyberbrain in a biological body"
+          "substrateMismatch": "Cyberbrain in a biological body",
+          "biologicalBody": "A biological body around the cyberbrain"
         }
       }
     },

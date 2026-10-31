@@ -9,7 +9,7 @@
   "system": {
     "tags": [],
     "additionalSystems": {},
-    "description": "You push the target past its safe operating limits. For WIL ÷ 5 action turns, the target receives +10 to one physical skill (your choice), +10 per superior success. When the duration ends, the target takes 1d6 DV from the strain.",
+    "description": "You push the target past its safe operating limits. For SOM ÷ 5 action turns, the target receives +10 to one physical skill (your choice), +10 per superior success. When the duration ends, the target takes 1d6 DV from the strain.",
     "active": true,
     "displayCategory": "",
     "updated": "2.3",
@@ -17,8 +17,10 @@
     "psiType": "gamma",
     "strainFamily": "ki",
     "actionType": "complex",
-    "duration": "Actions Turns",
-    "pushed": false
+    "duration": "action",
+    "pushed": false,
+    "landingRule": "boostSkill",
+    "repeatPerSuperior": true
   },
   "folder": "BdL8YvDVmJHwWscq",
   "_stats": {

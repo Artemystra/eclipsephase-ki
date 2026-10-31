@@ -9,7 +9,7 @@
   "system": {
     "tags": [],
     "additionalSystems": {},
-    "description": "You give a non-sapient bot or drone within Close range a single simple impulse: one short sentence, such as \"move away from the hatch\" or \"follow that vehicle\". For WIL ÷ 5 action turns, the machine acts on that impulse as if it were its own. This is not jamming and grants no access: you cannot see through the machine, issue further commands, or read its data.",
+    "description": "You give a non-sapient bot or drone within Close range a single simple impulse: one short sentence, such as \"move away from the hatch\" or \"follow that vehicle\". For SOM ÷ 5 action turns, the machine acts on that impulse as if it were its own. This is not jamming and grants no access: you cannot see through the machine, issue further commands, or read its data.",
     "active": true,
     "displayCategory": "",
     "updated": "2.3",
@@ -17,7 +17,7 @@
     "psiType": "gamma",
     "strainFamily": "ki",
     "actionType": "complex",
-    "duration": "Actions Turns",
+    "duration": "action",
     "pushed": false
   },
   "folder": "BdL8YvDVmJHwWscq",
