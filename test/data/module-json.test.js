@@ -10,9 +10,9 @@ describe("the module manifest", () => {
     expect(manifest.version).toMatch(/^\d+\.\d+\.\d+$/);
   });
 
-  test("it requires a system version that has the strain-family registry", () => {
+  test("it requires a system version that has strain-family targeting", () => {
     const system = manifest.relationships.systems.find(entry => entry.id === "eclipsephase");
-    expect(system.compatibility.minimum).toEqual("2.5");
+    expect(system.compatibility.minimum).toEqual("2.8.5");
   });
 
   test("it declares no document sub-type, since Ki adds no actor or item type", () => {

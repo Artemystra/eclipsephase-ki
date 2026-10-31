@@ -36,8 +36,8 @@ the core system; Ki lives here.
 
 ## Requirements
 
-Eclipse Phase system **2.5** or later. The module registers itself through the system's strain-family
-registry, which earlier versions do not have.
+Eclipse Phase system **2.9** or later. The module registers itself through the system's strain-family
+registry and relies on its targeting rules, which earlier versions do not have.
 
 ## Installing
 
