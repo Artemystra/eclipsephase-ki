@@ -18,7 +18,8 @@
     "strainFamily": "ki",
     "actionType": "complex",
     "duration": "instant",
-    "pushed": false
+    "pushed": false,
+    "landingRule": "shockEffect"
   },
   "folder": "BdL8YvDVmJHwWscq",
   "_stats": {
